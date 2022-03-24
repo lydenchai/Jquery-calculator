@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>jQuery Calculator</title>
-        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"/>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="style/main.css" />
-        <script type="text/javascript" src="js/app.js"></script>
-        <link rel="stylesheet" href="style/hover.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator using jquery</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style/main.css" />
+  <script type="text/javascript" src="js/app.js"></script>
+  <link rel="stylesheet" href="style/hover.css">
+</head>
+
+<body>
+  <div class="container">
     <div class="calc">
       <br>
       <form name="form">
-        <input class="calc-display" placeholder="0"/>
+        <input class="calc-display" placeholder="0" />
       </form>
-      <br>
       <table>
         <tr>
-          <td><input type="button" class="hvr-grow" id="input" value="AC" onclick="c()" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="+/-" onclick="insrt('-0')" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="%" onclick="insrt('/100')" /></td>
-          <td><input type="button" class="hvr-grow" id="spacial" value="÷" onclick="insrt('/')" /></td>
+          <td><input type="button" id="input" value="AC" onclick="c()" /></td>
+          <td><input type="button" id="input" value="+/-" onclick="insrt('-0')" /></td>
+          <td><input type="button" id="input" value="%" onclick="insrt('/100')" /></td>
+          <td><input type="button" id="spacial" value="÷" onclick="insrt('/')" /></td>
         </tr>
         <tr>
-          <td><input type="button" class="hvr-grow" id="input" value="7" onclick="insrt(7)" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="8" onclick="insrt(8)" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="9" onclick="insrt(9)" /></td>
-          <td><input type="button" class="hvr-grow" id="spacial" value="x" onclick="insrt('*')" /></td>
+          <td><input type="button" id="input" value="7" onclick="insrt(7)" /></td>
+          <td><input type="button" id="input" value="8" onclick="insrt(8)" /></td>
+          <td><input type="button" id="input" value="9" onclick="insrt(9)" /></td>
+          <td><input type="button" id="spacial" value="x" onclick="insrt('*')" /></td>
         </tr>
         <tr>
-          <td><input type="button" class="hvr-grow" id="input" value="4" onclick="insrt(4)" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="5" onclick="insrt(5)" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="6" onclick="insrt(6)" /></td>
-          <td><input type="button" class="hvr-grow" id="spacial" value="+" onclick="insrt('+')" /></td>
+          <td><input type="button" id="input" value="4" onclick="insrt(4)" /></td>
+          <td><input type="button" id="input" value="5" onclick="insrt(5)" /></td>
+          <td><input type="button" id="input" value="6" onclick="insrt(6)" /></td>
+          <td><input type="button" id="spacial" value="+" onclick="insrt('+')" /></td>
         </tr>
         <tr>
-          <td><input type="button" class="hvr-grow" id="input" value="1" onclick="insrt(1)" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="2" onclick="insrt(2)" /></td>
-          <td><input type="button" class="hvr-grow" id="input" value="3" onclick="insrt(3)" /></td>
-          <td><input type="button"  class="hvr-grow" id="spacial" value="-" onclick="insrt('-')" /></td>
+          <td><input type="button" id="input" value="1" onclick="insrt(1)" /></td>
+          <td><input type="button" id="input" value="2" onclick="insrt(2)" /></td>
+          <td><input type="button" id="input" value="3" onclick="insrt(3)" /></td>
+          <td><input type="button" id="spacial" value="-" onclick="insrt('-')" /></td>
         </tr>
         <tr>
           <td colspan="2">
-            <input id="spacial1" type="button" class="hvr-grow" value="0" onclick="insrt(0)"/>
+            <input id="spacial1" type="button" value="0" onclick="insrt(0)" />
           </td>
-          <td><input type="button" class="hvr-grow" id="input" value="." onclick="insrt('.')" /></td>
+          <td><input type="button" id="input" value="." onclick="insrt('.')" /></td>
           <td>
-            <input id="spacial" type="button" class="hvr-grow" value="=" onclick="eql()"/>
+            <input id="spacial" type="button" value="=" onclick="eql()" />
           </td>
         </tr>
       </table>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
